@@ -4,21 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us - Sweet Orient</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+     body {
+  margin: 0;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background: #fff8f2;
+  color: #3b2f2f;
+  line-height: 1.6;
+}
+
+.header {
+  background: #d97706;
+  color: #fff;
+}
+
+.hh {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+}
+
+.lo {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;}
+
+  .li {
+  display: flex;
+}
+
+.li a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 16px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.contact {
+  margin: 40px auto;
+  padding: 20px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+strong { color: #a83232; font-weight: bold; }
+
+.foot {
+  background: #d97706;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 40px;
+  position: relative;
+}
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-wrap">
-      <a class="logo" href="index.html">Sweet Orient</a>
-      <div class="nav">
+  <header class="header">
+    <div class="hh">
+      <a class="lo" href="index.html">Sweet Orient</a>
+      <div class="li">
         <a href="index.html">Home</a>
-        <a href="about.html" class="active">About Us</a>
+        <a href="about.html" class="li a">About Us</a>
       </div>
     </div>
   </header>
-
-  
-    <section class="page-header">
+    <section >
       <div class="container">
         <h1>About Sweet Orient</h1>
         <p>We are passionate about bringing authentic oriental sweets to your table. Our recipes are inspired by generations of tradition and crafted with the finest ingredients.</p>
@@ -31,16 +91,14 @@
         <p>Founded in 2020, Sweet Orient has become a beloved destination for dessert lovers. From Cairo to the world, we share the joy of oriental flavors.</p>
 
         <h2>Our Values</h2>
-        <ul class="list">
+        <ul>
           <li><strong>Authenticity:</strong> Preserving traditional recipes.</li>
           <li><strong>Quality:</strong> Using premium ingredients.</li>
           <li><strong>Hospitality:</strong> Serving with warmth and care.</li>
         </ul>
       </div>
     </section>
-  
-
-  <footer class="site-footer">
+  <footer class="foot">
     <div class="container">
       <p>Contact us: info@sweetorient.com</p>
     </div>
