@@ -4,75 +4,241 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sweet Orient Restaurant</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+  margin: 0;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background: #fff8f2;
+  color: #3b2f2f;
+  line-height: 1.6;
+}
+
+.header {
+  background: #d97706;
+  color: #fff;
+}
+
+.hh {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+}
+
+.lo {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.li {
+  display: flex;
+}
+
+.li a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 16px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.li a:active {
+  background: #b45309;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+}
+
+.hero h1 {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.hero p {
+  margin: 20px 0;
+}
+
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.menu-table th, .menu-table td {
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  text-align: left;
+}
+
+.menu-table th {
+  background: #d97706;
+  color: #fff;
+  text-align: center;
+}
+
+.contact {
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form input,
+.form textarea {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 10px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+textarea {
+  resize: none;
+}
+.btn {
+  display: inline-block;
+  background: #d97706;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #b45309;
+}
+
+.btn:active {
+  background: #3b2f2f;
+}
+
+.foot {
+  background: #d97706;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 40px;
+  position: relative;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+b, strong { color: #a83232; font-weight: bold; }
+i, em { color: #555; font-style: italic; }
+u { text-decoration: underline; color: #0066cc; }
+mark { background: yellow; color: black; padding: 2px 4px; border-radius: 3px; }
+small { font-size: 0.8em; color: #777; }
+del { text-decoration: line-through; color: #999; }
+ins { text-decoration: underline; color: green; font-weight: bold; }
+sup { font-size: 0.7em; vertical-align: super; color: #a83232; }
+
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-wrap">
-      <a class="logo" href="index.html">Sweet Orient</a>
-      <div class="nav">
-        <a href="index.html" class="active">Home</a>
+  <header class="header">
+    <div class="hh">
+      <a class="lo" href="index.html">Sweet Orient</a>
+      <div class="li">
+        <a href="index.html" class="li a">Home</a>
         <a href="about.html">About Us</a>
       </div>
     </div>
   </header>
 
-  
-    <section class="hero">
-      <div class="container">
-        <h1>Welcome to Sweet Orient</h1>
-        <p>Discover the finest oriental desserts, from baklava to basbousa, made with love and tradition.</p>
-        <a class="btn" href="about.html">Learn More</a>
-      </div>
-    </section>
-
-    <section class="menu">
-      <div class="container">
-        <h2>Our Specialties</h2>
-        <table class="menu-table">
-          <thead>
-            <tr>
-            <th>Image</th>
-              <th>Dessert</th>
-              <th>Description</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-            <td><img src="bak.png" alt="not found" width="100"></td>
-              <td>Baklava</td>
-              <td>Layers of filo pastry filled with nuts and honey syrup</td>
-              <td>150 EGP</td>
-            </tr>
-            <tr>
-            <td><img src="bas.jpg" alt="not found" width="100"></td>
-              <td>Basbousa</td>
-              <td>Semolina cake soaked in sweet syrup</td>
-              <td>120 EGP</td>
-            </tr>
-            <tr>
-                 <td><img src="kon.jfif" alt="not found" width="100"></td>
-              <td>Knafeh</td>
-              <td>Cheese pastry topped with shredded phyllo and syrup</td>
-              <td>100 EGP</td>
-            </tr>
-            <tr>
-                 <td><img src="maamoul-I.jpg" alt="not found" width="100"></td>
-              <td>Maamoul</td>
-              <td>Shortbread cookies filled with dates or nuts</td>
-              <td>100 EGP</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-  <footer class="site-footer">
+  <section class="hero">
     <div class="container">
-      <p>© 2025 Sweet Orient Restaurant. All rights reserved.</p>
+      <h1>Welcome to <mark>Sweet Orient</mark></h1>
+      <p>Discover the <b>finest oriental desserts</b>, from <i>baklava</i> to <u>basbousa</u>, made with love and tradition.</p>
+      <a class="btn" href="about.html">Learn More</a>
+    </div>
+  </section>
+
+  <section class="menu">
+    <div class="container">
+      <h2>Our Specialties</h2>
+      <table class="menu-table">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Dessert</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="bak.png" alt="Baklava dessert" width="100"></td>
+            <td><strong>Baklava</strong></td>
+            <td>Layers of filo pastry filled with <em>nuts</em> and honey syrup</td>
+            <td>150 <sub>EGP</sub></td>
+          </tr>
+          <tr>
+            <td><img src="bas.jpg" alt="Basbousa dessert" width="100"></td>
+            <td><b>Basbousa</b></td>
+            <td>Semolina cake soaked in <mark>sweet syrup</mark></td>
+            <td>120 <sub>EGP</sub></td>
+          </tr>
+          <tr>
+            <td><img src="kon.jfif" alt="Knafeh dessert" width="100"></td>
+            <td>Knafeh</td>
+            <td>Cheese pastry topped with shredded phyllo and syrup</td>
+            <td>100 <sub>EGP</sub></td>
+          </tr>
+          <tr>
+            <td><img src="maamoul-I.jpg" alt="Maamoul dessert" width="100"></td>
+            <td>Maamoul</td>
+            <td>Shortbread cookies filled with dates or nuts</td>
+            <td>100 <sub>EGP</sub></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="text.php" method="post" class="form">
+        <div>
+        <label for="name">Name (<sup>*</sup>):</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div>
+        <label for="email">Email (<sup>*</sup>):</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+       </div>
+        <div>
+<label for="message">Message:</label>
+        <textarea rows="5" cols="40" id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        </div>
+        <p><small>Fields marked with <sup>*</sup> are required.</small></p>
+
+        <button type="submit" class="btn"><b>Send</b></button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="container">
+      <p>© 2025 Sweet Orient Restaurant. <del>All rights reserved</del> <ins>Enjoy your desserts!</ins></p>
     </div>
   </footer>
 </body>
-
 </html>
